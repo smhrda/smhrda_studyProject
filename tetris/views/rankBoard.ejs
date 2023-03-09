@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rankBoard</title>
+  <link rel="stylesheet" href="./css/rankStyle.css">
+ </head>
+
+<body>
+    <section>
+        <div id="logo">
+            <img src="./css/logo.png">
+        </div>
+        <div class="tbl-header">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+              <tr>
+                <th>순위</th>
+                <th>닉네임</th>
+                <th>점수</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+                <% for(let i=0; i<data.length; i++){%> 
+                        <tr>
+                    <td><%=i+1 %></td>
+                    <td><%=data[i].ranking_nick %></td>
+                    <td><%=data[i].ranking_score %></td>
+                </tr>
+                    <%}%>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="restart">
+        <a target="_blank" href="http://localhost:5001/">
+            <button id="restart" style="background-color: green;">다시하기</button>
+        </a>
+      </div>
+</body>
+
+</html>

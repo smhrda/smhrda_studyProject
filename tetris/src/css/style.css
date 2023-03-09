@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #172f93;
+}
+
+.score {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.playground > ul {
+  border: 1px solid #333;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.playground > ul > li {
+  width: 100%;
+  height: 25px;
+  background-color: #307393;
+}
+
+.playground > ul > li > ul {
+  display: flex;
+}
+
+.playground > ul > li > ul > li {
+  width: 25px;
+  height: 25px;
+  outline: 1px solid #172f93;
+}
+
+/* 블록 디자인 */
+.tree {
+  background-image: radial-gradient(rgb(240, 103, 226), #de5fd2);
+}
+.squre {
+  background-image: radial-gradient(rgb(242, 212, 81), #e8ca4d);
+}
+.bar {
+  background-image: radial-gradient(rgb(81, 247, 187), #4edba8);
+}
+.zeeLeft {
+  background-image: radial-gradient(rgb(255, 85, 94, 1), #de4a51);
+}
+.zeeRight {
+  background-image: radial-gradient(rgb(187, 250, 82), #a4ec31);
+}
+.elLeft {
+  background-image: radial-gradient(rgb(255, 147, 80), #e57d41);
+}
+.elRight {
+  background-image: radial-gradient(rgb(86, 60, 199), #5740c1);
+}
+
+.game-text {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-size: 50px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.setRanking {
+  font-size: 20px;
+  display: none;
+}
+
+#setNicknameButton {
+  display: none;
+}
+
+#logo {
+  text-align: center;
+  margin-top: 3.1rem;
+}

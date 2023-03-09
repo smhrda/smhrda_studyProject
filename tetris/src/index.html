@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="logo">
+        <img src="./css/logo.png">
+    </div>
+    <div class="wrapper">
+        <div class="game-text">
+            GAME OVER!!
+            <form action="/setRanking" class="setRanking" method="get ">
+                닉네임 : <input type="text" name="nickname">
+                점수 : <input type="text" name="score" readonly>
+                <input type="submit" value="등록하기">
+            </form>
+            <button id="setNickname" style="background-color: blue;">랭킹 등록</button>
+            <button id="restart" style="background-color: green;">다시하기</button>
+        </div>
+        <br>
+        <div class="score">0</div>
+        <div class="playground">
+            <ul></ul>
+        </div>
+    </div>
+    <script src="js/tetris.js" type="module"></script>
+</body>
+
+</html>

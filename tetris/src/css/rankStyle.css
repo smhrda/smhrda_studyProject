@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"); /* 폰트 임포트 */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+body {
+  background: #172f93;
+}
+section {
+  margin: 50px;
+}
+
+#logo {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+.tbl-header {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.tbl-content {
+  height: 300px;
+  overflow-x: auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+th {
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td {
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+/* 다시하기 버튼 디자인 */
+button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  clear: left;
+  text-align: center;
+}
+
+.restart {
+  text-align: center;
+}
+
+/* 스크롤바 디자인 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}

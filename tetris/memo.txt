@@ -1,0 +1,6 @@
+1. Error: No default engine was specified and no extension was provided.
+ - express에서 html 파일을 렌더링 할 때 발생
+ => html을 ejs로 변환해야 함
+    - html을 사용하고 싶은 경우에는
+        app.set("view engine", "ejs");
+        app.engine("html", require("ejs").renderFile);
