@@ -1,0 +1,16 @@
+1. React.FC 를 잘 사용하지 않는 이유
+(Type 'void' is not assignable to type 'ReactElement<any, any> | null'.ts(2322) 에러 발생)
+  - React.FC<>는 항상 children을 가짐
+  - React.FC<>는 defaultProps를 사용하지 못하게 함
+  => 옛날 방식으로, props를 타이핑 하는 것이 더 안전함
+
+2. React.Fragment 태그의 사용
+ - return시 하나의 태그로 묶을 때 사용(<></>와 같음)
+ -> 의미없는 div의 반복을 막아주고, li태그를 가진 컴포넌트가 div때문에 리스트 형태가 되지 못하는 경우를 막을 수 있음
+
+3. types.d.ts로 파일명을 설정하면 파일에 decoration
+    -> import를 따로 하지 않아도 파일 안의 타입 사용 가능
+
+4. ERROR : ReactDOM.render is no longer supported in React 18. 
+  - ReactDOM.render가 리액트 v18부터 사용되지 않아서 발생하는 에러
+  => createRoot API를 사용하여 렌더링
